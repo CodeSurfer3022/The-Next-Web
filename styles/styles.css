@@ -77,8 +77,34 @@ aside {
     flex: 0 21%;
 }
 
+/* style categories */
+.categories {
+    background: yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: deepskyblue;
+    height: 700px;
+    margin: 20px;
+    flex: 28%;
+}
+
+/* style deals */
+.deals-content {
+    margin: 20px;
+    background: lightcyan;
+}
+
+.deal {
+    background: indianred;
+    flex: 0 22%;
+    height: 250px;
+    margin-bottom: 20px;
+}
 /* style footer */
 footer {
-    background: lightcyan;
+    background: darkcyan;
     clear: both;
 }
