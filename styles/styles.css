@@ -33,7 +33,52 @@ li {
     float: right;
 }
 
+/* style main content */
+.content {
+    background: indianred;
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+
+.big {
+    background: yellow;
+    height: 500px;
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+.small {
+    background: darkcyan;
+    height: 250px;
+}
+
+/* style news */
+.news {
+    background: pink;
+}
+
+.news-content {
+    margin: auto 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.new {
+    background: darkcyan;
+    height: 200px;
+    margin-bottom: 20px;
+    flex: 0 21%;
+}
+
 /* style footer */
 footer {
+    background: lightcyan;
     clear: both;
 }
