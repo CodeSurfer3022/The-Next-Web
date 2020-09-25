@@ -1,0 +1,39 @@
+/* style nav */
+nav {
+    background: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-nav {
+    background: black;
+    color: white;
+}
+
+.big-nav {
+    clear: left;
+    color: gray;
+}
+
+li {
+    float: left;
+    margin: 5px 10px;
+}
+
+.big-nav li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-search {
+    margin-right: 10px;
+}
+
+.right {
+    float: right;
+}
+
+/* style footer */
+footer {
+    clear: both;
+}
