@@ -163,4 +163,18 @@ footer {
         flex: 0 30%;
         margin: 10px;
     }
+
+    /* style categories */
+    .categories {
+        justify-content: flex-start;
+    }
+    .category {
+        flex: 0 47%;
+    }
+}
+
+@media (max-width: 700px) {
+    .categories {
+        display: block;
+    }
 }
