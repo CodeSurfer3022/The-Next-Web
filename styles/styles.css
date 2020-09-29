@@ -11,6 +11,7 @@ nav {
 }
 
 .big-nav {
+    position: relative;
     clear: left;
     color: gray;
 }
@@ -27,6 +28,10 @@ li {
 
 .fa-search {
     margin-right: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 .right {
@@ -107,4 +112,45 @@ aside {
 footer {
     background: darkcyan;
     clear: both;
+}
+
+
+/* add media queries */
+@media (max-width: 800px) {
+    /* style nav */
+    .small-nav li{
+        display: none;
+    }
+
+    .big-nav li{
+        display: none;
+    }
+
+    .big-nav .right {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        border-left: 1px solid gray;
+    }
+
+    .big-nav .tnw {
+        display: block;
+        background: black;
+        margin: 0;
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /*height: 40px;*/
+    }
+
+    /* style content */
+    .content {
+        display: block;
+    }
+
+    .big {
+        height: 250px;
+    }
 }
