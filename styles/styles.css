@@ -87,13 +87,14 @@ aside {
     background: yellow;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .category {
     background: deepskyblue;
     height: 700px;
-    margin: 20px;
-    flex: 28%;
+    margin: 10px;
+    flex: 0 30%;
 }
 
 /* style deals */
@@ -152,5 +153,14 @@ footer {
 
     .big {
         height: 250px;
+    }
+
+    /* style news */
+    .wrapper {
+        justify-content: flex-start;
+    }
+    .new {
+        flex: 0 30%;
+        margin: 10px;
     }
 }
