@@ -113,8 +113,30 @@ aside {
 footer {
     background: darkcyan;
     clear: both;
+    color: white;
 }
 
+.social {
+    background: #302e2e;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footnote {
+    padding: 40px;
+    background: black;
+    text-align: center;
+    clear: left;
+}
 
 /* add media queries */
 @media (max-width: 800px) {
@@ -170,6 +192,12 @@ footer {
     }
     .category {
         flex: 0 47%;
+    }
+
+    /* style deals */
+    .deal {
+        flex: 0 30%;
+        margin: 10px;
     }
 }
 
