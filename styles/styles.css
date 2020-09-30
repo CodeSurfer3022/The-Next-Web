@@ -2,6 +2,7 @@
 body {
     min-width: 350px;
     font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+    color: white;
 }
 
 nav {
@@ -54,9 +55,36 @@ li {
 }
 
 .big {
-    background: yellow;
+    position: relative;
+    background: linear-gradient(to bottom,
+                                rgba(120,122,120,0.38) 0%,
+                                rgba(100,100,100,0.45) 33%,
+                                rgba(0,0,0,1) 100%),
+                                url(../assets/images/cover.png);
     height: 500px;
     flex: 2;
+}
+
+.big .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big .head h1 {
+    font-size: 5em;
+    margin: 10px;
+}
+
+.big .head p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.big .body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
 }
 
 aside {
@@ -71,6 +99,20 @@ aside {
     background: darkcyan;
     flex: 0 49%;
     width: 95%;
+    background: linear-gradient(to bottom,
+                                rgba(120,122,120,0.38) 0%,
+                                rgba(100,100,100,0.45) 33%,
+                                rgba(0,0,0,1) 100%),
+                                url(../assets/images/ear.jpeg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.small > * {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
 }
 
 /* style news */
