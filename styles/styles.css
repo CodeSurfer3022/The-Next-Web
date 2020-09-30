@@ -1,10 +1,10 @@
 /* style nav */
 body {
     min-width: 350px;
+    font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
 nav {
-    background: pink;
     display: flex;
     flex-direction: column;
 }
@@ -12,12 +12,16 @@ nav {
 .small-nav {
     background: black;
     color: white;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .big-nav {
     position: relative;
     clear: left;
-    color: gray;
+    color: #aaa;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 li {
@@ -46,7 +50,7 @@ li {
 .content {
     background: indianred;
     display: flex;
-    /*flex-wrap: wrap;*/
+    margin: 0 10px;
 }
 
 .big {
@@ -57,11 +61,16 @@ li {
 
 aside {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .small {
     background: darkcyan;
-    height: 250px;
+    flex: 0 49%;
+    width: 95%;
 }
 
 /* style news */
