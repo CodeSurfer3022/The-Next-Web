@@ -1,4 +1,8 @@
 /* style nav */
+body {
+    min-width: 350px;
+}
+
 nav {
     background: pink;
     display: flex;
@@ -79,7 +83,7 @@ aside {
     background: darkcyan;
     height: 200px;
     margin-bottom: 20px;
-    flex: 0 21%;
+    flex: 0 24%;
 }
 
 /* style categories */
@@ -93,8 +97,8 @@ aside {
 .category {
     background: deepskyblue;
     height: 700px;
-    margin: 10px;
-    flex: 0 30%;
+    margin: 10px 0;
+    flex: 0 31%;
 }
 
 /* style deals */
@@ -105,7 +109,7 @@ aside {
 
 .deal {
     background: indianred;
-    flex: 0 22%;
+    flex: 0 24%;
     height: 250px;
     margin-bottom: 20px;
 }
@@ -157,15 +161,17 @@ footer {
     }
 
     .big-nav .tnw {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: black;
+        color: white;
         margin: 0;
         position: absolute;
         width: 100px;
         height: 100%;
         top: 0;
         left: 0;
-        /*height: 40px;*/
     }
 
     /* style content */
@@ -191,8 +197,15 @@ footer {
         justify-content: flex-start;
     }
     .category {
-        flex: 0 47%;
+        margin-left: 1%;
+        margin-right: 1%;
+        flex: 1 47%;
     }
+
+    .category:last-child {
+        flex-grow: 0;
+    }
+
 
     /* style deals */
     .deal {
@@ -203,6 +216,9 @@ footer {
 
 @media (max-width: 700px) {
     .categories {
+        display: block;
+    }
+    .wrapper {
         display: block;
     }
 }
